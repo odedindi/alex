@@ -54,5 +54,9 @@ export const Footer = styled.footer`
 		justify-content: space-between;
 		padding: 1rem;
 		min-width: 10rem;
+
+		a {
+			padding: 0 0.5rem;
+		}
 	}
 `;

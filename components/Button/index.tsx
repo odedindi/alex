@@ -22,7 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
 	<S.Button
 		disabled={isLoading}
 		color={colorState}
-		loading={isLoading}
+		isLoading={isLoading}
 		size={size}
 		type={type}
 		uppercase={uppercase}

@@ -13,9 +13,11 @@ export const Footer: React.FC<FooterProps> = ({ colorState }) => {
 		<S.FooterWrapper className={colorState}>
 			<S.Footer>
 				<div>
-					<Link href="/privacy-policy" footerLink>
+					{/* <Link href="https://odedo.dev"  footerLink>
+					</Link> */}
+					<a rel="noopener noreferrer" target="_blank" href="https://odedo.dev">
 						ODEDINDI
-					</Link>
+					</a>
 					©{currentYear}, All rights reserved
 				</div>
 

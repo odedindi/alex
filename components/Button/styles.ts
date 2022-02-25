@@ -18,7 +18,7 @@ const gradient = keyframes`
 export const Button = styled.button<{
 	color: ColorState;
 	disabled: boolean;
-	loading: boolean;
+	isLoading: boolean;
 	size: ButtonSize;
 	uppercase?: boolean;
 }>`
@@ -30,8 +30,8 @@ export const Button = styled.button<{
 	line-height: ${v.text800};
 	box-shadow: 0 2px 15px 1px ${v.colors.grey.shadow};
 
-	${({ loading }) =>
-		loading &&
+	${({ isLoading }) =>
+		isLoading &&
 		css`
 			animation: ${gradient} 1s ease-in-out infinite;
 			background-position: right center;
